@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="industrialModelStoreContainer" CdmEntityContainer="industrialEntities">
+    <EntitySetMapping Name="description">
+      <EntityTypeMapping TypeName="industrialModel.description">
+        <MappingFragment StoreEntitySet="description">
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="Laguage_id" ColumnName="Laguage_id" />
+          <ScalarProperty Name="Description_str" ColumnName="Description_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="diseños">
+      <EntityTypeMapping TypeName="industrialModel.diseños">
+        <MappingFragment StoreEntitySet="diseños">
+          <ScalarProperty Name="Design_id" ColumnName="Design_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="Description_std" ColumnName="Description_std" />
+          <ScalarProperty Name="Tipo_id" ColumnName="Tipo_id" />
+          <ScalarProperty Name="Unidad_id_Purchase" ColumnName="Unidad_id_Purchase" />
+          <ScalarProperty Name="Unidad_id_Aplication" ColumnName="Unidad_id_Aplication" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="End_Date" ColumnName="End_Date" />
+          <ScalarProperty Name="Last_Upd" ColumnName="Last_Upd" />
+          <ScalarProperty Name="Usr_Upd" ColumnName="Usr_Upd" />
+          <ScalarProperty Name="User_upd" ColumnName="User_upd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="externos">
+      <EntityTypeMapping TypeName="industrialModel.externos">
+        <MappingFragment StoreEntitySet="externos">
+          <ScalarProperty Name="Ext_id" ColumnName="Ext_id" />
+          <ScalarProperty Name="Tipo_ext_id" ColumnName="Tipo_ext_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="CUIT" ColumnName="CUIT" />
+          <ScalarProperty Name="Direccion_id" ColumnName="Direccion_id" />
+          <ScalarProperty Name="Direccion_ent_id" ColumnName="Direccion_ent_id" />
+          <ScalarProperty Name="Direccion_fac_id" ColumnName="Direccion_fac_id" />
+          <ScalarProperty Name="Nac_Ext" ColumnName="Nac_Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="language">
+      <EntityTypeMapping TypeName="industrialModel.language">
+        <MappingFragment StoreEntitySet="language">
+          <ScalarProperty Name="Language_id" ColumnName="Language_id" />
+          <ScalarProperty Name="Language_Desc" ColumnName="Language_Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="industrialModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_design">
+      <EntityTypeMapping TypeName="industrialModel.tipo_design">
+        <MappingFragment StoreEntitySet="tipo_design">
+          <ScalarProperty Name="Tipo_id" ColumnName="Tipo_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="Description_str" ColumnName="Description_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_externos">
+      <EntityTypeMapping TypeName="industrialModel.tipo_externos">
+        <MappingFragment StoreEntitySet="tipo_externos">
+          <ScalarProperty Name="Tipo_ext_id" ColumnName="Tipo_ext_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="Description_str" ColumnName="Description_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unidad_med">
+      <EntityTypeMapping TypeName="industrialModel.unidad_med">
+        <MappingFragment StoreEntitySet="unidad_med">
+          <ScalarProperty Name="Unidad_id" ColumnName="Unidad_id" />
+          <ScalarProperty Name="Description_id" ColumnName="Description_id" />
+          <ScalarProperty Name="Factor_N" ColumnName="Factor_N" />
+          <ScalarProperty Name="Description_str" ColumnName="Description_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="industrialModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Interno" ColumnName="Interno" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Language_id" ColumnName="Language_id" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

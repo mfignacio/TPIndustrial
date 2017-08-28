@@ -1,0 +1,15 @@
+c:\users\developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\bin\Debug\Industrial2.exe.config
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\bin\Debug\Industrial2.exe
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\bin\Debug\Industrial2.pdb
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.Properties.Resources.resources
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.csproj.GenerateResource.Cache
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.exe
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.pdb
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\bin\Debug\MetroFramework.Design.dll
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\bin\Debug\MetroFramework.dll
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.Form1.resources
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.Compras.resources
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.Diseño.resources
+C:\Users\Developer\documents\visual studio 2015\Projects\Industrial2\Industrial2\obj\Debug\Industrial2.Elementos.resources

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="industrialModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="description">
+    <Key>
+      <PropertyRef Name="Description_id" />
+    </Key>
+    <Property Name="Description_id" Type="Int32" Nullable="false" />
+    <Property Name="Laguage_id" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Description_str" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="diseños">
+    <Key>
+      <PropertyRef Name="Design_id" />
+    </Key>
+    <Property Name="Design_id" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description_id" Type="Int32" Nullable="false" />
+    <Property Name="Description_std" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tipo_id" Type="Int32" Nullable="false" />
+    <Property Name="Unidad_id_Purchase" Type="Int32" />
+    <Property Name="Unidad_id_Aplication" Type="Int32" />
+    <Property Name="Start_Date" Type="DateTime" Nullable="false" />
+    <Property Name="End_Date" Type="DateTime" />
+    <Property Name="Last_Upd" Type="DateTime" Nullable="false" />
+    <Property Name="Usr_Upd" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="User_upd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="externos">
+    <Key>
+      <PropertyRef Name="Ext_id" />
+    </Key>
+    <Property Name="Ext_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_ext_id" Type="Int32" Nullable="false" />
+    <Property Name="Description_id" Type="Int32" />
+    <Property Name="CUIT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion_id" Type="Int32" Nullable="false" />
+    <Property Name="Direccion_ent_id" Type="Int32" Nullable="false" />
+    <Property Name="Direccion_fac_id" Type="Int32" Nullable="false" />
+    <Property Name="Nac_Ext" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="Language_id" />
+    </Key>
+    <Property Name="Language_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Language_Desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="Role_id" />
+    </Key>
+    <Property Name="Role_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_design">
+    <Key>
+      <PropertyRef Name="Tipo_id" />
+    </Key>
+    <Property Name="Tipo_id" Type="Int32" Nullable="false" />
+    <Property Name="Description_id" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Description_str" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tipo_externos">
+    <Key>
+      <PropertyRef Name="Tipo_ext_id" />
+    </Key>
+    <Property Name="Tipo_ext_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description_id" Type="Int32" Nullable="false" />
+    <Property Name="Description_str" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="unidad_med">
+    <Key>
+      <PropertyRef Name="Unidad_id" />
+    </Key>
+    <Property Name="Unidad_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description_id" Type="Int32" Nullable="false" />
+    <Property Name="Factor_N" Type="Int32" Nullable="false" />
+    <Property Name="Description_str" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sector" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Role_id" Type="Int32" Nullable="false" />
+    <Property Name="Interno" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Language_id" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="industrialEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="description" EntityType="Self.description" />
+    <EntitySet Name="diseños" EntityType="Self.diseños" />
+    <EntitySet Name="externos" EntityType="Self.externos" />
+    <EntitySet Name="language" EntityType="Self.language" />
+    <EntitySet Name="role" EntityType="Self.role" />
+    <EntitySet Name="tipo_design" EntityType="Self.tipo_design" />
+    <EntitySet Name="tipo_externos" EntityType="Self.tipo_externos" />
+    <EntitySet Name="unidad_med" EntityType="Self.unidad_med" />
+    <EntitySet Name="users" EntityType="Self.users" />
+  </EntityContainer>
+</Schema>

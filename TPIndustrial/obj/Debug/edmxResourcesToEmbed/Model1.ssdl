@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="industrialModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="description">
+    <Key>
+      <PropertyRef Name="Description_id" />
+    </Key>
+    <Property Name="Description_id" Type="int" Nullable="false" />
+    <Property Name="Laguage_id" Type="varchar" MaxLength="45" />
+    <Property Name="Description_str" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="diseños">
+    <Key>
+      <PropertyRef Name="Design_id" />
+    </Key>
+    <Property Name="Design_id" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="Description_id" Type="int" Nullable="false" />
+    <Property Name="Description_std" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Tipo_id" Type="int" Nullable="false" />
+    <Property Name="Unidad_id_Purchase" Type="int" />
+    <Property Name="Unidad_id_Aplication" Type="int" />
+    <Property Name="Start_Date" Type="date" Nullable="false" />
+    <Property Name="End_Date" Type="date" />
+    <Property Name="Last_Upd" Type="timestamp" Precision="6" Nullable="false" />
+    <Property Name="Usr_Upd" Type="varchar" MaxLength="45" />
+    <Property Name="User_upd" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="externos">
+    <Key>
+      <PropertyRef Name="Ext_id" />
+    </Key>
+    <Property Name="Ext_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tipo_ext_id" Type="int" Nullable="false" />
+    <Property Name="Description_id" Type="int" />
+    <Property Name="CUIT" Type="varchar" MaxLength="20" />
+    <Property Name="Direccion_id" Type="int" Nullable="false" />
+    <Property Name="Direccion_ent_id" Type="int" Nullable="false" />
+    <Property Name="Direccion_fac_id" Type="int" Nullable="false" />
+    <Property Name="Nac_Ext" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="Language_id" />
+    </Key>
+    <Property Name="Language_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Language_Desc" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="Role_id" />
+    </Key>
+    <Property Name="Role_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_design">
+    <Key>
+      <PropertyRef Name="Tipo_id" />
+    </Key>
+    <Property Name="Tipo_id" Type="int" Nullable="false" />
+    <Property Name="Description_id" Type="varchar" MaxLength="45" />
+    <Property Name="Description_str" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="tipo_externos">
+    <Key>
+      <PropertyRef Name="Tipo_ext_id" />
+    </Key>
+    <Property Name="Tipo_ext_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description_id" Type="int" Nullable="false" />
+    <Property Name="Description_str" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="unidad_med">
+    <Key>
+      <PropertyRef Name="Unidad_id" />
+    </Key>
+    <Property Name="Unidad_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description_id" Type="int" Nullable="false" />
+    <Property Name="Factor_N" Type="int" Nullable="false" />
+    <Property Name="Description_str" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Sector" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Role_id" Type="int" Nullable="false" />
+    <Property Name="Interno" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Language_id" Type="int" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityContainer Name="industrialModelStoreContainer">
+    <EntitySet Name="description" EntityType="Self.description" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="diseños" EntityType="Self.diseños" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="externos" EntityType="Self.externos" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="language" EntityType="Self.language" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="role" EntityType="Self.role" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="tipo_design" EntityType="Self.tipo_design" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="tipo_externos" EntityType="Self.tipo_externos" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="unidad_med" EntityType="Self.unidad_med" Schema="industrial" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="industrial" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
