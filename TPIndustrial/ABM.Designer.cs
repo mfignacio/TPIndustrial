@@ -49,7 +49,7 @@
             this.cboProductos.ItemHeight = 23;
             this.cboProductos.Location = new System.Drawing.Point(115, 19);
             this.cboProductos.Name = "cboProductos";
-            this.cboProductos.Size = new System.Drawing.Size(121, 29);
+            this.cboProductos.Size = new System.Drawing.Size(216, 29);
             this.cboProductos.TabIndex = 0;
             this.cboProductos.UseSelectable = true;
             this.cboProductos.SelectedIndexChanged += new System.EventHandler(this.cboProductos_SelectedIndexChanged);
@@ -66,7 +66,7 @@
             // btnAgregar
             // 
             this.btnAgregar.ActiveControl = null;
-            this.btnAgregar.Location = new System.Drawing.Point(260, 61);
+            this.btnAgregar.Location = new System.Drawing.Point(337, 60);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(71, 38);
             this.btnAgregar.Style = MetroFramework.MetroColorStyle.Green;
@@ -79,7 +79,7 @@
             // btnEliminar
             // 
             this.btnEliminar.ActiveControl = null;
-            this.btnEliminar.Location = new System.Drawing.Point(431, 62);
+            this.btnEliminar.Location = new System.Drawing.Point(508, 60);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(71, 38);
             this.btnEliminar.Style = MetroFramework.MetroColorStyle.Red;
@@ -93,7 +93,7 @@
             // btnModificar
             // 
             this.btnModificar.ActiveControl = null;
-            this.btnModificar.Location = new System.Drawing.Point(337, 61);
+            this.btnModificar.Location = new System.Drawing.Point(414, 59);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(88, 39);
             this.btnModificar.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -119,7 +119,7 @@
             this.cboComponentes.ItemHeight = 23;
             this.cboComponentes.Location = new System.Drawing.Point(115, 70);
             this.cboComponentes.Name = "cboComponentes";
-            this.cboComponentes.Size = new System.Drawing.Size(121, 29);
+            this.cboComponentes.Size = new System.Drawing.Size(216, 29);
             this.cboComponentes.TabIndex = 6;
             this.cboComponentes.UseSelectable = true;
             // 
@@ -159,7 +159,7 @@
             // btnNuevoProducto
             // 
             this.btnNuevoProducto.ActiveControl = null;
-            this.btnNuevoProducto.Location = new System.Drawing.Point(260, 20);
+            this.btnNuevoProducto.Location = new System.Drawing.Point(337, 19);
             this.btnNuevoProducto.Name = "btnNuevoProducto";
             this.btnNuevoProducto.Size = new System.Drawing.Size(165, 35);
             this.btnNuevoProducto.TabIndex = 10;

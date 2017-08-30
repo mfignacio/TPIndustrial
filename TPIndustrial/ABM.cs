@@ -21,7 +21,7 @@ namespace TPIndustrial
             MySqlConnection conectar = new MySqlConnection("server=localhost; database=industrial;Uid=root;pwd=root;");
 
             conectar.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT distinct Description_std FROM diseños WHERE Tipo_id=1 OR Tipo_id=3", conectar);
+            MySqlCommand comando = new MySqlCommand("SELECT distinct Producto FROM carga ORDER BY Producto ASC", conectar);
             MySqlDataReader almacena = comando.ExecuteReader();
 
             while (almacena.Read())
@@ -73,10 +73,6 @@ namespace TPIndustrial
                     }
                 }
             }
-
-            //DataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
-            if (dataGridViewABM.RowCount > 1)
-            { dataGridViewABM.Rows.RemoveAt(0); }
             
         }
 
@@ -98,7 +94,7 @@ namespace TPIndustrial
 
             MySqlConnection conectarFinales = new MySqlConnection("server=localhost; database=industrial;Uid=root;pwd=root;");
             conectarFinales.Open();
-            MySqlCommand comandoFinales = new MySqlCommand("SELECT Description_std FROM diseños WHERE Tipo_id=1", conectarFinales);
+            MySqlCommand comandoFinales = new MySqlCommand("SELECT Description_std FROM diseños WHERE Tipo_id=0", conectarFinales);
             MySqlDataReader almacenaFinales = comandoFinales.ExecuteReader();
 
             while (almacenaFinales.Read())
@@ -116,7 +112,7 @@ namespace TPIndustrial
                 MySqlConnection conectar2 = new MySqlConnection("server=localhost; database=industrial;Uid=root;pwd=root;");
 
                 conectar2.Open();
-                MySqlCommand comando2 = new MySqlCommand("SELECT distinct Description_std FROM diseños WHERE Tipo_id = 2 OR Tipo_id = 3 OR Tipo_id = 4", conectar2);
+                MySqlCommand comando2 = new MySqlCommand("SELECT distinct Description_std FROM diseños WHERE  Tipo_id = 1 OR Tipo_id = 2 OR Tipo_id = 3 OR Tipo_id = 4", conectar2);
                 MySqlDataReader almacena2 = comando2.ExecuteReader();
 
                 while (almacena2.Read())

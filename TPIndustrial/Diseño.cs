@@ -33,7 +33,7 @@ namespace Industrial2
             string conString = @"Data Source=localhost;port=3306;Initial Catalog=industrial;User Id=root;password=root";
             using (MySqlConnection con = new MySqlConnection(conString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT Description_std Descripción FROM diseños WHERE Design_id LIKE  '" + diseñoBuscado + "'", con))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT distinct Producto FROM carga WHERE Componente LIKE  '" + diseñoBuscado + "'", con))
                 {
                     cmd.CommandType = CommandType.Text;
                     {
@@ -50,8 +50,7 @@ namespace Industrial2
                     }
                 }
             }
-            if (DataGridViewDiseño.RowCount > 1)
-            { DataGridViewDiseño.Rows.RemoveAt(0); }
+           
         }
 
     }

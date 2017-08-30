@@ -61,7 +61,7 @@
             this.groupBox1.Controls.Add(this.radiobtnComponen);
             this.groupBox1.Location = new System.Drawing.Point(23, 185);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(727, 178);
+            this.groupBox1.Size = new System.Drawing.Size(799, 178);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selecione";
@@ -70,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(577, 97);
+            this.label1.Location = new System.Drawing.Point(658, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 11;
@@ -79,7 +79,7 @@
             // btnEjecutar
             // 
             this.btnEjecutar.ActiveControl = null;
-            this.btnEjecutar.Location = new System.Drawing.Point(644, 126);
+            this.btnEjecutar.Location = new System.Drawing.Point(716, 126);
             this.btnEjecutar.Name = "btnEjecutar";
             this.btnEjecutar.Size = new System.Drawing.Size(77, 46);
             this.btnEjecutar.TabIndex = 10;
@@ -106,7 +106,7 @@
             this.txtCantidad.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.txtCantidad.Lines = new string[] {
         "1"};
-            this.txtCantidad.Location = new System.Drawing.Point(644, 93);
+            this.txtCantidad.Location = new System.Drawing.Point(716, 87);
             this.txtCantidad.MaxLength = 32767;
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.PasswordChar = '\0';
@@ -130,7 +130,7 @@
             this.cboDiseño.ItemHeight = 23;
             this.cboDiseño.Location = new System.Drawing.Point(237, 126);
             this.cboDiseño.Name = "cboDiseño";
-            this.cboDiseño.Size = new System.Drawing.Size(121, 29);
+            this.cboDiseño.Size = new System.Drawing.Size(213, 29);
             this.cboDiseño.TabIndex = 7;
             this.cboDiseño.UseSelectable = true;
             this.cboDiseño.SelectedIndexChanged += new System.EventHandler(this.cboDiseño_SelectedIndexChanged);
@@ -141,7 +141,7 @@
             this.CboComprasTipo.FontWeight = MetroFramework.MetroComboBoxWeight.Bold;
             this.CboComprasTipo.FormattingEnabled = true;
             this.CboComprasTipo.ItemHeight = 23;
-            this.CboComprasTipo.Location = new System.Drawing.Point(424, 87);
+            this.CboComprasTipo.Location = new System.Drawing.Point(531, 87);
             this.CboComprasTipo.Name = "CboComprasTipo";
             this.CboComprasTipo.Size = new System.Drawing.Size(121, 29);
             this.CboComprasTipo.TabIndex = 6;
@@ -154,7 +154,7 @@
             this.cboComprasProducto.ItemHeight = 23;
             this.cboComprasProducto.Location = new System.Drawing.Point(237, 87);
             this.cboComprasProducto.Name = "cboComprasProducto";
-            this.cboComprasProducto.Size = new System.Drawing.Size(121, 29);
+            this.cboComprasProducto.Size = new System.Drawing.Size(213, 29);
             this.cboComprasProducto.TabIndex = 5;
             this.cboComprasProducto.UseSelectable = true;
             this.cboComprasProducto.SelectedIndexChanged += new System.EventHandler(this.cboComprasProducto_SelectedIndexChanged);
@@ -165,7 +165,7 @@
             this.cboElementosTipo.FontWeight = MetroFramework.MetroComboBoxWeight.Bold;
             this.cboElementosTipo.FormattingEnabled = true;
             this.cboElementosTipo.ItemHeight = 23;
-            this.cboElementosTipo.Location = new System.Drawing.Point(424, 33);
+            this.cboElementosTipo.Location = new System.Drawing.Point(531, 33);
             this.cboElementosTipo.Name = "cboElementosTipo";
             this.cboElementosTipo.Size = new System.Drawing.Size(121, 29);
             this.cboElementosTipo.TabIndex = 4;
@@ -179,7 +179,7 @@
             this.cboElementosProducto.ItemHeight = 23;
             this.cboElementosProducto.Location = new System.Drawing.Point(237, 33);
             this.cboElementosProducto.Name = "cboElementosProducto";
-            this.cboElementosProducto.Size = new System.Drawing.Size(121, 29);
+            this.cboElementosProducto.Size = new System.Drawing.Size(213, 29);
             this.cboElementosProducto.TabIndex = 3;
             this.cboElementosProducto.UseSelectable = true;
             this.cboElementosProducto.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
@@ -201,10 +201,10 @@
             this.radiobtnCompras.AutoSize = true;
             this.radiobtnCompras.Location = new System.Drawing.Point(6, 95);
             this.radiobtnCompras.Name = "radiobtnCompras";
-            this.radiobtnCompras.Size = new System.Drawing.Size(411, 15);
+            this.radiobtnCompras.Size = new System.Drawing.Size(507, 15);
             this.radiobtnCompras.TabIndex = 1;
             this.radiobtnCompras.Text = "Compras para producir el producto                                                " +
-    "     del tipo:";
+    "                                     del tipo:";
             this.radiobtnCompras.UseSelectable = true;
             this.radiobtnCompras.Click += new System.EventHandler(this.radiobtnCompras_Click);
             // 
@@ -213,17 +213,17 @@
             this.radiobtnComponen.AutoSize = true;
             this.radiobtnComponen.Location = new System.Drawing.Point(7, 47);
             this.radiobtnComponen.Name = "radiobtnComponen";
-            this.radiobtnComponen.Size = new System.Drawing.Size(410, 15);
+            this.radiobtnComponen.Size = new System.Drawing.Size(506, 15);
             this.radiobtnComponen.TabIndex = 0;
             this.radiobtnComponen.Text = "Elementos que componen el producto                                               " +
-    "del tipo:";
+    "                                del tipo:";
             this.radiobtnComponen.UseSelectable = true;
             this.radiobtnComponen.Click += new System.EventHandler(this.radiobtnComponen_Click);
             // 
             // btnABM
             // 
             this.btnABM.ActiveControl = null;
-            this.btnABM.Location = new System.Drawing.Point(335, 66);
+            this.btnABM.Location = new System.Drawing.Point(373, 77);
             this.btnABM.Name = "btnABM";
             this.btnABM.Size = new System.Drawing.Size(77, 46);
             this.btnABM.Style = MetroFramework.MetroColorStyle.Orange;
@@ -258,7 +258,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 386);
+            this.ClientSize = new System.Drawing.Size(845, 386);
             this.Controls.Add(this.cboFecha);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btnABM);

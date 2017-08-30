@@ -45,7 +45,7 @@ namespace TPIndustrial
             List<string> Design_id = new List<string> { };
             List<string> Description_id = new List<string> { };
             string nombre = "NACHO";
-            int tipo = 1;
+            int tipo = 0;
             //string final = "Producto Final";
             //string intermedio = "Intermedio Make";
             if (cboTipo.SelectedItem.ToString() == "Producto Final")
@@ -53,7 +53,7 @@ namespace TPIndustrial
             else if (cboTipo.SelectedItem.ToString() == "Intermedio Make")
                 { tipo = 3; }
             string inicio = "2006-01-01";
-            string fechaActual = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string fechaActual = DateTime.Now.Date.ToString("yyyy-MM-dd");
             //DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             // string fechita = fechaActual.ToString();
 

@@ -17,4 +17,3 @@ C:\Users\Developer\documents\visual studio 2015\Projects\TPIndustrial\TPIndustri
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\TPIndustrial\TPIndustrial\obj\Debug\TPIndustrial.Editar.resources
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\TPIndustrial\TPIndustrial\obj\Debug\Industrial2.Compras.resources
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\TPIndustrial\TPIndustrial\obj\Debug\TPIndustrial.NuevoProducto.resources
-C:\Users\Developer\Documents\Visual Studio 2015\Projects\TPIndustrial\TPIndustrial\obj\Debug\TPIndustrial.csprojResolveAssemblyReference.cache

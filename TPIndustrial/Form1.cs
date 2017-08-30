@@ -27,7 +27,7 @@ namespace Industrial2
                 MySqlConnection conectar = new MySqlConnection("server=localhost; database=industrial;Uid=root;pwd=root;");
 
                 conectar.Open();
-                MySqlCommand comandoFecha = new MySqlCommand("SELECT distinct Fecha FROM carga", conectar);
+                MySqlCommand comandoFecha = new MySqlCommand("SELECT distinct Fecha FROM carga WHERE Fecha NOT LIKE 'NULL' ", conectar);
                 MySqlDataReader almacenaFecha = comandoFecha.ExecuteReader();
 
                 while (almacenaFecha.Read())
@@ -38,7 +38,7 @@ namespace Industrial2
                 conectar.Close();
 
                 conectar.Open();
-                MySqlCommand comando = new MySqlCommand("SELECT Description_std FROM diseños WHERE Tiene_hijo= 1", conectar);
+                MySqlCommand comando = new MySqlCommand("SELECT distinct Producto FROM carga ORDER BY Producto ASC", conectar);
                 MySqlDataReader almacena = comando.ExecuteReader();
 
                 while (almacena.Read())
@@ -60,7 +60,7 @@ namespace Industrial2
                 conectar.Close();
 
                 conectar.Open();
-                MySqlCommand comando3 = new MySqlCommand("SELECT Description_std FROM diseños WHERE Tiene_hijo= 1 OR Tipo_id = 2", conectar);
+                MySqlCommand comando3 = new MySqlCommand("SELECT distinct Producto FROM carga", conectar);
                 MySqlDataReader almacena3 = comando3.ExecuteReader();
 
                 while (almacena3.Read())
@@ -71,7 +71,7 @@ namespace Industrial2
                 conectar.Close();
 
                 conectar.Open();
-                MySqlCommand comando4 = new MySqlCommand("SELECT Design_id FROM diseños", conectar);
+                MySqlCommand comando4 = new MySqlCommand("SELECT distinct Componente FROM carga ORDER BY Componente ASC", conectar);
                 MySqlDataReader almacena4 = comando4.ExecuteReader();
 
                 while (almacena4.Read())

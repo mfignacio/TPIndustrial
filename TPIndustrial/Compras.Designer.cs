@@ -36,17 +36,17 @@
             // 
             this.dataGridViewCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCompras.Location = new System.Drawing.Point(23, 63);
-            this.dataGridViewCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewCompras.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewCompras.Name = "dataGridViewCompras";
             this.dataGridViewCompras.RowTemplate.Height = 24;
-            this.dataGridViewCompras.Size = new System.Drawing.Size(299, 382);
+            this.dataGridViewCompras.Size = new System.Drawing.Size(452, 382);
             this.dataGridViewCompras.TabIndex = 0;
             // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 468);
+            this.ClientSize = new System.Drawing.Size(497, 468);
             this.Controls.Add(this.dataGridViewCompras);
             this.Name = "Compras";
             this.Text = "Compras";
